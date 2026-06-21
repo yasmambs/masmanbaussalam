@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Aplikasi | MAS MANBA'USSALAM</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B1F3B', /* Deep Navy */
+                        accent: '#D4AF37',  /* Gold */
+                        bgLight: '#F3F4F6', /* Background */
+                        textDark: '#111827' /* Text */
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bgLight text-textDark font-sans antialiased">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary text-accent rounded-full flex items-center justify-center font-bold text-xl">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg leading-tight text-primary">MAS MANBA'USSALAM</h1>
+                        <p class="text-xs text-gray-500 font-medium">Portal Terpadu</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:block text-right">
+                        <p class="text-sm font-semibold text-primary">Ahmad Guru</p>
+                        <p class="text-xs text-gray-500">NIP. 198012345678</p>
+                    </div>
+                    <img src="https://ui-avatars.com/api/?name=Ahmad+Guru&background=0B1F3B&color=D4AF37" alt="Profile" class="w-10 h-10 rounded-full border-2 border-accent">
+                    <button class="text-gray-400 hover:text-red-600 transition-colors ml-2" title="Keluar">
+                        <i class="fa-solid fa-right-from-bracket text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <div class="bg-primary rounded-2xl p-6 md:p-8 text-white shadow-lg mb-8 relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-2xl md:text-3xl font-bold mb-2">Selamat Datang di Portal MAS MANBA'USSALAM! 👋</h2>
+                <p class="text-gray-300 max-w-2xl text-sm md:text-base">Sistem informasi terpadu satu pintu. Pilih aplikasi yang ingin Anda akses di bawah ini. Pastikan Anda memiliki hak akses yang sesuai.</p>
+            </div>
+            <i class="fa-solid fa-mosque absolute -bottom-10 -right-10 text-9xl text-white opacity-10 z-0"></i>
+        </div>
+
+        <h3 class="text-lg font-bold text-primary mb-4 border-b pb-2">Ringkasan Hari Ini</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500 font-medium">Pendaftar PMB</p>
+                    <p class="text-xl font-bold text-primary">128</p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-lg bg-green-50 text-green-600 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500 font-medium">Jumlah Guru</p>
+                    <p class="text-xl font-bold text-primary">42</p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-lg bg-yellow-50 text-accent flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500 font-medium">Verifikasi Ijazah</p>
+                    <p class="text-xl font-bold text-primary">15</p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500 font-medium">Pengumuman</p>
+                    <p class="text-xl font-bold text-primary">3</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-lg font-bold text-primary mb-4 border-b pb-2">Aplikasi Tersedia</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <a href="https://pmb.masmanbaussalam.sch.id" class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-accent transition-colors duration-300"></div>
+                <div class="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <h4 class="font-bold text-lg text-primary mb-1">PMB Online</h4>
+                <p class="text-sm text-gray-500">Penerimaan Siswa Baru, unggah berkas, dan hasil seleksi.</p>
+            </a>
+
+            <a href="https://angket.masmanbaussalam.sch.id" class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-accent transition-colors duration-300"></div>
+                <div class="w-14 h-14 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+                <h4 class="font-bold text-lg text-primary mb-1">Angket Peminatan</h4>
+                <p class="text-sm text-gray-500">Pengisian angket untuk penjurusan siswa baru.</p>
+            </a>
+
+            <a href="https://verifikasi.masmanbaussalam.sch.id" class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-accent transition-colors duration-300"></div>
+                <div class="w-14 h-14 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <h4 class="font-bold text-lg text-primary mb-1">Verifikasi Ijazah</h4>
+                <p class="text-sm text-gray-500">Pencarian dan validasi keaslian ijazah alumni.</p>
+            </a>
+
+            <a href="https://simpeg.masmanbaussalam.sch.id" class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-accent transition-colors duration-300"></div>
+                <div class="w-14 h-14 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-users-gear"></i>
+                </div>
+                <h4 class="font-bold text-lg text-primary mb-1">SIMPEG</h4>
+                <p class="text-sm text-gray-500">Sistem Informasi Manajemen Kepegawaian & Guru.</p>
+            </a>
+
+        </div>
+    </main>
+
+</body>
+</html>
